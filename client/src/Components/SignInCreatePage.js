@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 import RegistrationForm from './RegistrationForm'
 import SignIn from "./SignIn.js"
 
@@ -21,11 +20,6 @@ function SignInCreatePage({user, setUser}) {
     return (
       <div>
          <div>
-           <div>
-           <header>
-       <h2 className="h2-loop">The Loop 🔁</h2>
-       </header>
-           </div>
         <div className="modalParent">
 
         {user ? <button className="button-create" onClick={logout}>Logout</button> : null}
