@@ -37,14 +37,24 @@ napa = Rental.find_by(name: 'Napa')
 # Reservation seed data
 Reservation.create!(
   rental: alpine,
-  start_date: Date.new(2023, 2, 3),
-  end_date: Date.new(2023, 3, 4)
+  start_date: (2023, 2, 3),
+  end_date: (2023, 3, 4),
+  first_name: "Jane",
+  last_name: "Doe",
+  email: "john@example.com",
+  adult_guests: 4,
+  child_guests: 2
 )
 
 Reservation.create!(
   rental: napa,
-  start_date: Date.new(2023, 3, 3),
-  end_date: Date.new(2023, 3, 8)
+  start_date: (2023, 3, 3),
+  end_date: (2023, 3, 8),
+  first_name: "Jane",
+  last_name: "Doe",
+  email: "jane@example.com",
+  adult_guests: 6,
+  child_guests: 0
 )
 
 # Review seed data
@@ -73,7 +83,17 @@ Review.create!(
   )
 
 
+Contact.create!(
+    name: "John Doe",
+    email: "john@doe.com",
+    message: "I'd like to rent"
+)
 
+Contact.create!(
+    name: "Jane Doe",
+    email: "jane@doe.com",
+    message: "I'd like to rent"
+)
 
 
 

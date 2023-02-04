@@ -1,6 +1,6 @@
 import React from 'react'
-import RegistrationForm from './RegistrationForm'
 import SignIn from "./SignIn.js"
+import AdminPortal from './AdminPortal'
 
 function SignInCreatePage({user, setUser}) {
  
@@ -23,13 +23,14 @@ function SignInCreatePage({user, setUser}) {
         <div className="modalParent">
 
         {user ? <button className="button-create" onClick={logout}>Logout</button> : null}
-        <h1>Welcome {user ? ` ${user.name}` : null}</h1>
+        <div>
+         <h1>Welcome {user ? ` ${user.name}` : null}</h1>
+         {user ? <AdminPortal/> : null}
+        </div>
         {user === null ? (
           <>
             <SignIn setUser={setUser} />
-            <br/>
-            <button className="button-create">Create Profile</button>
-              <RegistrationForm setUser={setUser} />
+
           </>
         ) : null}
           </div>

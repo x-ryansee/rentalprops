@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../Styling/Reservation.css";
+import RegistrationForm from "./RegistrationForm";
 
 const Reservation = () => {
   const [firstName, setFirstName] = useState("");
@@ -27,6 +28,7 @@ const Reservation = () => {
   };
 
   return (
+    <div>
     <form className="reservation-form" onSubmit={handleSubmit}>
       <h1 className="reservation-title">Reservation</h1>
       <div className="form-field">
@@ -111,6 +113,8 @@ const Reservation = () => {
         Submit
       </button>
     </form>
+    <RegistrationForm/>
+    </div>
   );
 };
 
