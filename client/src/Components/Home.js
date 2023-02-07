@@ -1,14 +1,16 @@
 import React from "react";
 import VideoBackground from "./VideoBackground";
-import Reviews from "./Review/Reviews";
+import Reviews from "./Reviews";
 
 
 const Home = () => {
 
   return (
     <div>
-        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '50vh'}}>
-            <VideoBackground/>
+        <div>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+          <VideoBackground style={{ height: '100vh', width: '100vw' }} />
+        </div>
         </div>
       <div
         style={{

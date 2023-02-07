@@ -1,0 +1,22 @@
+.rooms-section {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .rooms-section h2,
+  .rooms-section h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .room-icon {
+    font-size: 36px;
+    margin-right: 10px;
+  }
+  
+  .room-description {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  

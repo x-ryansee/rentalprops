@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../Styling/Reservation.css";
 import RegistrationForm from "./RegistrationForm";
+import VideoBackground from "./VideoBackground";
 
 const Reservation = () => {
   const [firstName, setFirstName] = useState("");
@@ -29,6 +30,9 @@ const Reservation = () => {
 
   return (
     <div>
+         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+          <VideoBackground style={{ height: '100vh', width: '100vw' }} />
+        </div>
     <form className="reservation-form" onSubmit={handleSubmit}>
       <h1 className="reservation-title">Reservation</h1>
       <div className="form-field">
@@ -113,7 +117,6 @@ const Reservation = () => {
         Submit
       </button>
     </form>
-    <RegistrationForm/>
     </div>
   );
 };

@@ -47,6 +47,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_31_230441) do
     t.date "end_date"
     t.integer "adult_guests"
     t.integer "child_guests"
+    t.string "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["rental_id"], name: "index_reservations_on_rental_id"
@@ -56,6 +57,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_31_230441) do
     t.bigint "rental_id", null: false
     t.string "title"
     t.text "content"
+    t.string "name"
+    t.string "date_stayed"
+    t.integer "score"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["rental_id"], name: "index_reviews_on_rental_id"

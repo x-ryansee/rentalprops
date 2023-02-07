@@ -34,6 +34,7 @@ const AdminPortal = () => {
             <th>End Date</th>
             <th>Adult Guests</th>
             <th>Child Guests</th>
+            <th>Status</th>
           </tr>
         </thead>
         <tbody>
@@ -46,6 +47,7 @@ const AdminPortal = () => {
               <td>{reservation.end_date}</td>
               <td>{reservation.adult_guests}</td>
               <td>{reservation.child_guests}</td>
+              <td>{reservation.status}</td>
             </tr>
           ))}
         </tbody>

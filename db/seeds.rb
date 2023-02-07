@@ -20,14 +20,44 @@ User.create!(
 
 Rental.create!(
     name: "Alpine",
-    about: "Alpine is a cozy cabin located in the heart of Lake Tahoe. With its stunning views of the mountains and lake, this property is the perfect getaway for a family or a group of friends.",
-    amenities: "4 bed, 3 bath"
+    about: "4 Bedrooms, 3 Bathrooms, View of Lake, Close to Tahoe City, Beach and SkiingAlpine is a cozy cabin located in the heart of Lake Tahoe. With its stunning views of the mountains and lake, this property is the perfect getaway for a family or a group of friends.",
+    amenities: "Available Deceber/January. 30 Day minimum. Please reach out to us for a custom quote on longer term stays.
+
+    Updated with a high end kitchen, Lake Tahoe views, and in a fabulous location that is peaceful and quiet yet close to town and activities. Care has been taken to create a house that evokes a sense of place with quality furnishings, charming vintage mountain sports decor, and all the amenities you want to see on your hard earned vacation.
+    
+    The home is fronted by a sunny lake view deck, ideal for relaxing or enjoying a leisurely meal in the summer. There are two Adirondack chairs and a dining set for 6 (chairs can be added from the kitchen or dining room). Upon entering the home you will see an open plan living/dining/kitchen area with a big old-fashioned wood burning stone fireplace and a dining room area that seats 8 comfortably. The kitchen includes custom cabinetry, hand selected Sierra stone flooring, leathered finished granite countertops, a large apron front ceramic sink, and a custom banquette and table under an antique French light fixture. This banquette seats 6 and enjoys lovely views of the tree covered hillside behind the home, especially cozy and charming in the winter when the hill is blanketed with snow. This is everyone's favorite spot to work on the computer. The kitchen is stocked with most everything you could need and comes complete with a 4 burner Wolf range, an extra quiet Bosch dishwasher, and a handy French door refrigerator/freezer. There is reliable WIFI via Charter Cable. Adjacent is the back deck where you will find a propane grill and a supply of firewood. Also on this level is a main bedroom (queen) with shower (no tub), a second bedroom (two twins), and another full bathroom with tub. Passing the kitchen you find a landing with stairs up and down. The upper level, via 9 stairs, leads to a spacious bedroom with a queen bed and a sitting area that includes a queen sized sofa bed, loveseat and coffee table. This bedroom also enjoys a small lake view balcony and and a full bath with tub. Also on this level is another small bedroom with two twins. This bedroom shares the bathroom with the large bedroom on this level via a second door opening to the hallway. This level makes an excellent suite for guests or another family, providing its' own completely private space from the main floor.
+    
+    Descending the four steps from the main level takes you to a mudroom/laundry room, also with a hand fitted Sierra stone floor. A big window provides ample natural light and views of the pines to make doing laundry less of a chore. Here you will find a full sized front loading washer and dryer. This area has a door to the garage which will park one medium sized vehicle. There is another garage space but it may be used to store outdoor furniture, etc. The flat, easy access driveway will provide parking for two large or 4 small vehicles. During the summer season, from May 1 to October 31st, there is additional ample street parking on the flat, wide street in front of the house. You can easily park your boat or RV during the summer season. During the winter street parking is prohibited in order to provide for county plows. During the snow season our plow service will come every time there is a snowfall of 6in and clear the driveway, and will also knock down the berm to the street created when the county plows pass.
+    
+    The exterior summer amenities also include a horseshoe pit.
+    
+    While the Tahoe area can get busy during our ski holidays and the height of summer, our neighborhood is known for its peace and quiet as well as access to the Tahoe National Forest. The home is less than four miles north of the charming town of Tahoe City where you can enjoy wide a selection of restaurants, grocery stores, shops and services. For sports enthusiasts it is ideally located a stone's throw from the local's favorite Old County Road trailhead: a pedestrian/bicycle/cross country ski/snowshoeing paradise leading to the virtually endless adventures of Tahoe National Forest. There are virtually unlimited trails that can take you to Lake Watson, Northstar, and the new in 2018 extravagantly paved connector to the Lake Tahoe bike trail. Also nearby is the popular Old County bouldering area (10 minute walk), Lake Tahoe Cross Country ski trails and Dollar Reservoir. For Alpine skiing, it is about a 15 minute drive to Palisades Tahoe, and under 30 to Northstar, Homewood, Diamond Peak, and Granlibakken. Just five minutes to the nearest beach (Skylandia State Park) and the newly upgraded Lake Forest park and boat launch, which after it's recent renovation is considered the best place in Tahoe to launch your boat.
+    
+    If your thing is offroad vehicles, a National Forest trailhead is about a third of a mile away near the intersection of Fulton Crescent Road and Lynwood, close enough to be convenient but far enough to avoid noise.
+    
+    We welcome longer term rentals, please reach out to us for a custom quote.
+    
+    Stays of 30 or more days do not require the 12 % Placer County transient occupancy tax.
+    
+    We accommodate: working vacations, vacci-cations, work from home, multi-family, month stay, monthly rates, work remotely, work-cation, long term stay, remote work, long term stay."
   )
   
   Rental.create!(
     name: "Napa",
-    about: "Napa is a spacious and stylish house located in the wine country of Napa Valley. With its beautiful vineyard views and comfortable amenities, this property is the ideal choice for a relaxing retreat.",
-    amenities: "4 bed, 3 bath"
+    about: "4 Bedroom (2 Ensuite Kings) 3 Baths with boat dock close to both Sonoma and Napa",
+    amenities: "30 Day Minimum Stay. Please Inquire for available dates and a custom quote.
+
+    Why settle for only one of the world's great wine regions when you can have two? Located in the peaceful and lesser touristed Carneros region, the house is wonderfully situated for exploring both the Napa and Sonoma valleys and sits between the Napa Sonoma Wildlife Refuge (great hiking!) and the scenic Napa River. You are 15 minutes to downtown Napa and 20 minutes to Sonoma Plaza, but a world away from the crowds, tour buses and traffic jams. Less than ten minutes to multiple world class wineries (five minutes drive to Etude and Bouchaine). The restaurants and spa of the Carneros Inn are under 10 minutes away, and the new Stanley Lane Auberge Resort is a pleasant bike ride away. Enjoy panoramic views over the Napa River to the East and watch the water birds on the protected wetlands to the West. Watch boats cruise the river from your private dock, enjoy a glass of local wine from the expansive river view deck or relax by the fire pit. Ideal for the wine enthusiast, sailor, birdwatcher, bicyclist, runner, walker, fisherman or outdoors enthusiast.
+    
+    The home features four bedrooms including two huge primary suites with king beds. Both primary suites overlook the Napa River and the Eastern hills, and each have access to a large balcony. There is also a queen bedroom with views of the river and the Eastern hills. The final bedroom, outfitted with new twin beds and mattresses, has a view to the west and overlooks the wildlife sanctuary. This can be made available as a single king sized bed. There are three bathrooms all with full sized bathtubs. The home was extensively refurbished in 2018/2019 with all new flooring, appliances, fixtures, window treatments and furnishings. All bedrooms and public spaces feature an abundance of windows to appreciate the spectacular views and provides for a sun drenched interior. The home was recently decorated in a cheerful beach/farm/modern mix, with the majority of pieces by higher end manufacturers like Serena & Lily and RH. The kitchen is fully stocked with plenty of cookware, coffee maker, blender, toaster, Cuisinart, etc. etc. There are washer/dryer pairs on both the first and second floors.
+    
+    A large deck spans the entire back of the house and has comfortable lounge seating with a large fire pit, an umbrella, a propane barbecue grill and an outdoor dining table which seats 10. The back yard has a lawn and a concrete patio Beyond that is the gangway to a 38' newly surfaced deepwater dock from which you can fish or dock your boat.
+    
+    There is a hiking trail across the street from the house at the Napa/Sonoma Wildlife Refuge. From the kitchen window it is common to observe white pelicans, snowy egrets, great blue herons, and tundra swans in the wildlife sanctuary waters to the west. We have also seen seals in the river and you can fish from the dock for sturgeon and bass. Hiking and biking are popular activities in our neighborhood, because of the quiet, flat streets and trails as well as the attraction of the wildlife sanctuary. To the east, the river is an object of endless fascination as the tide ebbs and flows. Small fishing boats and grand yachts alike parade for your entertainment with vineyards and the eastern hills in the far distance. Our neighborhood is a quiet and peaceful mix of houses lining the river, some new and modern and others small and rustic, all residents sharing a love of the outdoors.
+    
+    We are close to all of the delights of the world famous Carneros region. Being closer to San Francisco Bay the weather is known to be more moderate than that further up valley, with cooling breezes that are ideal for Chardonnay and Pinot Noir varietals. Our home is a six to 12 minute drive to attractions such as Etude Winery, Calmere Estate Winery, Poseidon Vineyards, Bouchaine Winery, Ceja Winery, Donum Estate Winery, Domaine Carneros champagne cellars, the Di Rosa Art Preserve, Stanly Lane Auberge Resort, and The Carneros Inn & Spa with its fabulous restaurants Farm and the BoonFly Cafe.
+    
+    We accommodate: work from home, wfh, long term stay, long term rental, monthly stay, monthly rate, vacci-cation."
   )
 
   # Calendar seed data
@@ -37,52 +67,334 @@ napa = Rental.find_by(name: 'Napa')
 # Reservation seed data
 Reservation.create!(
   rental: alpine,
-  start_date: (2023, 2, 3),
-  end_date: (2023, 3, 4),
+  start_date: "2023-02-04",
+  end_date: "2023-03-04",
   first_name: "Jane",
   last_name: "Doe",
   email: "john@example.com",
   adult_guests: 4,
-  child_guests: 2
+  child_guests: 2,
+  status: "approved"
 )
 
 Reservation.create!(
   rental: napa,
-  start_date: (2023, 3, 3),
-  end_date: (2023, 3, 8),
+  start_date: "2023-03-05",
+  end_date: "2023-03-08",
   first_name: "Jane",
   last_name: "Doe",
   email: "jane@example.com",
   adult_guests: 6,
-  child_guests: 0
+  child_guests: 0,
+  status: "approved"
 )
 
 # Review seed data
 Review.create!(
-  rental: alpine,
-  title: "Amazing views",
-  content: "This cabin has the most amazing views of the lake and mountains. We loved our stay here and can't wait to come back."
-)
-
-Review.create!(
     rental: alpine,
-    title: "Amazing time",
-    content: "This cabin has the most amazing views of the lake and mountains. We loved our stay here and can't wait to come back."
+    title: "Excellent Tahoe Property!",
+    content: "We have rented many properties in the Tahoe area, and this lovely house was by far our favorite. The Sees, our hosts, could not have done more to make us feel welcome! They were excellent, prompt communicators from the first contact we had, to before our stay, during occupancy, and after we left the house. As property owners, they were very fair with the terms of rental. We had no issues with the cabin during our stay, but I think that's because the Sees were on top of all details before we arrived. We were quite proud to invite family and friends to join us during our stay, as attention to detail and quality of furnishings were evident throughout the house. My husband and I are cyclists, mountain bikers, and hikers, and the location was fantastic. We could access the entire north lake paved bike trail system (Tahoe City, Sunnyside, Olympic Valley, Meeks Bay) from the cabin's driveway, and never have to get on the road. We loved the extensive non-paved trail system that encompasses all of Mt. Watson (if you want), and accesses the Tahoe Rim Trail, Burton Creek State Park, Tahoe City, Northstar, Carnelian Bay, and Brockway Summit. The entry to that forested 'playground' is only a few houses away. Everything in the house worked well and was very comfortable, it was quite clean and well-furnished, the location is excellent, and the view of the lake from the front deck in the evening was the perfect, tranquil setting to the end of a great day in the mountains. The quintessential Tahoe rental! We wouldn't hesitate to rent this house again!
+
+    ",
+    name: "Lauren S.",
+    date_stayed: "Nov 5, 2021",
+    score: 5
+  )
+
+  Review.create!(
+    rental: alpine,
+    title: "Such a pleasant stay!",
+    content: "We had a wonderful time at this property. The rooms were situated perfectly for our kids and parents - everyone was able to sleep in without being disturbed. The house was near a beautiful trail, and was so serene when sitting out on the front deck. Also, located only abt 7 mins drive to Tahoe City which was beautiful and fun to walk around! Lastly, amenities were great - toiletries, games and puzzles for the kids, and TV with Netflix etc for all of us to enjoy on the quiet evenings.
+
+    Make sure to bring coffee filters and anything to cook with - they don't keep it stocked since there's so much wildlife in the area - but totally understandable!
+    
+    We would absolutely stay again and recommend it to others! Thanks !!",
+    name: "Ashley B.",
+    date_stayed: "Jul 16, 2021",
+    score: 5
+  )
+
+  Review.create!(
+    rental: alpine,
+    title: "Family Oriented",
+    content: "Using the VRBO app, booking and communication with hosts, the See's, was easy, quick and convenient. Upon arrival the house felt warm and inviting with the lights and temperature already on. The location was close to all activities and had a view of Lake Tahoe. The decor was quaint with unique touches throughout the home. The amenities where a pleasant convenience.
+
+    We had a small concern with the overall cleanliness and immediately communicated with the hosts who provided a prompt response.
+    
+    We felt comfortable with plenty of space for the kids to play. Even able to work while enjoying the beautiful scenery and fast internet service.
+    
+    We had such a relaxing time and great experience that we are already looking at rebooking for next year.
+    
+    Thank you!",
+    name: "Jennifer L.",
+    date_stayed: "Jun 27, 2021",
+    score: 5
+  )
+
+  Review.create!(
+    rental: alpine,
+    title: "Grandparents and adult kids and grandkids vacation",
+    content: "I honestly don't know where to begin .
+
+    Everything about this trip and property was fantastic .It was our first time to Lake Tahoe and we could not have picked a better location or property to rent . the house is beautifully updated and comfortable . What was really spectacular was the two master bedrooms on operate floors .The upstairs bedrooms are situated so that it is almost in another wing . This makes for nice quiet for the sleeping on main level
+    
+    The three beautiful full baths were also amazing .the host provided upscale travel toiletries for each bath/bedroom
+    
+    The kitchen was superbly equipped with everything we needed . There is very comfortable seating in the kitchen as well as a separate dining room
+    
+    The outdoor space is great and there is a small view of lake from the front deck . We loved being at the end of the block and used the hiking trails and bike path daily
+    
+    The host has left no stone unturned !!!!!!
+    
+    We hope tom return to Lake Tahoe and this wonderful house in our future",
+    name: "mary ellen s.",
+    date_stayed: "Jun 1, 2021",
+    score: 5
+  )
+
+  Review.create!(
+    rental: alpine,
+    title: "Gorgeous, comfortable home in quiet setting-- wonderful for family trip",
+    content: "Our family group of 7 (5 adults, 2 kids) had a wonderful time staying at this really lovely, thoughtfully outfitted home!
+
+    The floorplan really worked for us, with plenty of space for people in our group to be alone, or for the kids to play in a different room from the adults.
+    
+    The kitchen and dining room were lovely and cozy, but with ample space for all of us, as was the living room space. We had a fire in the fireplace one evening, and used the sound system and TV occasionally as well. The mud room and laundry room were fantastic— so helpful to have the space for snow clothes and wet gear!
+    
+    We also loved the location— very quiet— and being able to see the lake form several windows and the front porch was a wonderful bonus. We explored the trail just up the street, which is fantastic for short or long walks.
+    
+    We really found everything we needed— everything in the house was easy to operate and user-friendly. And there was plenty of hot water for showers, and the beds were quite comfortable.
+    
+    The Sees have made a lovely, thematic family vacation home and we would love to come back!
+    
+    ",
+    name: "Elaine G.",
+    date_stayed: "Apr 23, 2021",
+    score: 5
+  )
+
+  Review.create!(
+    rental: alpine,
+    title: "Very nice location and beautiful kitchen",
+    content: "We really enjoyed staying here! We will be back again! Everything we needed and great space!",
+    name: "Lisa F.",
+    date_stayed: "Mar 16, 2021",
+    score: 5
+  )
+
+  Review.create!(
+    rental: alpine,
+    title: "We just completed a 7 day stay in this property. It is very clean and well appointed.",
+    content: "We had a wonderful stay at this property. Very well appointed. The kitchen is very nicely equipped. We made several meals in the lovely kitchen. The house is very well maintained and extremely comfortable. My family had a great stay and was very sad to leave. Thank you Joe and Linda for sharing your home with us. It's a beautiful home in a great location. My kids spent several days skiing and this house was a perfect location. It was great to have family time by the fireplace. Nice supply of firewood. We will definitely book again.",
+    name: "Syed H.",
+    date_stayed: "Mar 1, 2021",
+    score: 5
+  )
+
+  Review.create!(
+    rental: alpine,
+    title: "Carnelian bay home",
+    content: "House is clean, comfortable and has character. Owners were very responsive and helpful. The location is great, close to beautiful Skylandia beach and skiing. We had a great time and I would definitely recommend staying here.",
+    name: "sinead k.",
+    date_stayed: "Feb 22, 2021",
+    score: 5
+  )
+
+  Review.create!(
+    rental: alpine,
+    title: "Checked all the boxes!",
+    content: "We really enjoyed our stay, and this home checked all of our boxes. The bed configurations were perfect for our needs, the Viking range was a pleasure to cook with, the kitchen was well equipped, the living room was comfortable. High end smart TV with great instructions. Location was very convenient. The owners provided excellent information about the property and surrounds pre visit. The pre-stay emails were answered completely and in a very timely fashion. Quiet neighborhood in a beautiful setting. We'll be back!",
+    name: "K Q.",
+    date_stayed: "Feb 24, 2020",
+    score: 5
+  )
+
+  Review.create!(
+    rental: alpine,
+    title: "Wonderful Tahoe Stay",
+    content: "The house is absolutely lovely and every bit as nice as the pictures!",
+    name: "Ashley L.",
+    date_stayed: "Jan 13, 2020",
+    score: 5
+  )
+
+  Review.create!(
+    rental: alpine,
+    title: "great home away home for family vacation",
+    content: "We are family of 5 and all adults. this place has 4 bedrooms and 3 full baths, making everybody happy. The home decor is great and the kitchen is definitely great for family cooking. There are plenty of books and magazines, and choices of games. We played monopoly on first night and poker the second after having cooked dinners. We also very appreciative of the well shoved driveway and pathway to the main door. One minor thing that people might want to take note is that the garage door is tight. Our 2006 Honda Pilot barely fit in. Overall a great place we all enjoyed.",
+    name: "Sing-Man Y.",
+    date_stayed: "Jan 10, 2020",
+    score: 5
+  )
+
+  Review.create!(
+    rental: alpine,
+    title: "All of the comforts of home... and then some.",
+    content: "First class accommodations! Central location, functional layout and quiet neighborhood. The home includes a cook's kitchen, a deck with a peak of the lake and an outdoor firepit. Although we were just one family, two bedrooms on the main floor and two bedrooms on the second floor is a perfect setup for two families traveling together. The home was spotless and appeared to be recently remodeled with high quality fixtures and finishes. No disappointments here. We look forward to a return visit.",
+    name: "Robert K.",
+    date_stayed: "Oct 8, 2019",
+    score: 5
+  )
+
+  Review.create!(
+    rental: alpine,
+    title: "Relaxing in Tahoe",
+    content: "Wonderful",
+    name: "John G.",
+    date_stayed: "Sep 10, 2019",
+    score: 5
+  )
+
+  Review.create!(
+    rental: alpine,
+    title: "Beautiful Carnelian Bay cottage",
+    content: "We had a wonderful time in the home and the See’s were great hosts! 2 master bedrooms and 2 rooms each with double beds allowed plenty of room. Recently remodeled and the pictures don’t do it justice. Great location close to the north shore, we will be back!",
+    name: "Rob F.",
+    date_stayed: "Aug 1, 2019",
+    score: 5
+  )
+
+  Review.create!(
+    rental: alpine,
+    title: "Beautiful Home",
+    content: "The house was perfect for our family. We spent most of our time enjoying the front deck (with lake view) and the fire pit. Plus, everything was super clean.",
+    name: "Lauren N.",
+    date_stayed: "Jul 24, 2019",
+    score: 5
+  )
+
+  Review.create!(
+    rental: alpine,
+    title: "What a VACATION rental should be!",
+    content: "We have nothing but great things to say about our 4 night stay. The owners were very responsive, accommodating and detailed. The check in process was a breeze. The house itself has a warm feeling with lovely mountain and ski decor. The layout makes for the perfect combination of a spacious, but cozy feel at the same time. We especially enjoyed cooking and eating in the beautiful and lighted kitchen with even a view of the lake from the dining room window, our mornings in the porch with a stunning mountain and lake view, and our nights by the fire gazing at the shimmering lake lighted by the moon ( we were so lucky to have clear nights with an almost full moon!)
+
+    Comfortable beds, plenty of fresh clean towels, and everything you could possibly need for an enjoyable stay. You don’t need to bring anything! They have beach towels, beach chairs, sun block, bug repellant, beach bag and even a picnic basket with everything you would need! Everything was so clean and nicely organized.
+    
+    Although it was our 1st time visiting Lake Tahoe, we explored a lot of the areas and thought the location was perfect! Away from the crowds and noise, up in a hill ( with tons of beautiful hiking or biking trails 2 houses away), but within 5 to 10 minutes to restaurants, supermarkets, shops, and beaches.
+    
+    Highly recommended!",
+    name: "Josefina M.",
+    date_stayed: "Jul 24, 2019",
+    score: 5
+  )
+
+  Review.create!(
+    rental: alpine,
+    title: "Tahoe",
+    content: "This house was perfect for our stay. We had our family (5) and two friends. The home also accommodated our boat with ideal street parking and a great location as we were close to one of the best boat ramps on Tahoe. The owners travel/Tahoe advice and tips were extremely helpful as we were new travelers to Tahoe. Thank you!",
+    name: "Denby E.",
+    date_stayed: "Jul 25, 2019",
+    score: 5
+  )
+
+  Review.create!(
+    rental: alpine,
+    title: "Great location, Beautiful Kitchen, Clean and Charming lodge",
+    content: "Wonderful Location: We were here during the heavy snow season, we could use either 89 or 267. It's always good to have more options for this time of the year. Easy access to Northstar and Squaw Valley. Sunshine and lake view in the day time, and beautiful stars at night.
+
+    Beautiful Kitchen: We are a group who really enjoys to cook. This kitchen is not only fully-equipped with high-end appliances, it also has a nice nook area that we could all hangout while preparing the food.
+    
+    Cozy Living Space and Dinning area: We spent a lot of time around the fire place, chatting and listen to music after dinner. The dinning place has a large dining table, which was great for board games.
+    
+    Rooms and Bath room: 4BR and 3BA, the ratio makes very easy for 7 of us, combined with 1 family including 2 kids and other friends. 2 rooms with 2x twin beds made the arrangements very easy. All the rooms were clean, with enough electrical plugs and extra blankets.
+    
+    Other1: The trash bins are next to the driveway. A lot of places in Tahoe you need to take the trash and walk for a block to dump it. In winter time, this short distance is definitely a plus.
+    
+    Other2: The access instruction was sent in advance compares to many of other property, The owner's kindness and trust make us so easy to coordinate for the arrival.
+    
+    I surely want to come back again. I think in different seasons we can also enjoy the nice outdoor spaces.",
+    name: "Chika S.",
+    date_stayed: "Mar 8, 2019",
+    score: 5
+  )
+
+  Review.create!(
+    rental: alpine,
+    title: "Charming Bavarian Cottage",
+    content: "We spent Thanksgiving in this lovely cottage in the Carnelian Bay area. There was a view of the lake from the front deck and we were fortunate to have 2 days of snow which was gorgeous. The snow plow came through daily as well as a service that plowed the driveway. The home was immaculate and so welcoming when we arrived. The local service had the heat and lights turned on, a supply of wood ready for a warm fire, a nice bottle of wine and fresh towels laying on each bed. The newly remodeled kitchen was a dream to cook in with all the modern conveniences. The entire home was furnished so tastefully with a Tahoe touch in each room. The beds were comfortable with warm bedding and very nice linens. The bathrooms were also remodeled and supplied with wonderful amenities for guests. The home is nicely laid out and very roomy. The location is perfect being close to Tahoe City or Kings Beach, hiking trails and close to ski resorts for the ski lovers. The home is in a lovely neighborhood with plenty of natural forest surrounding the property. The owners of this home were a pleasure to work with being very responsive and accommodating. We look forward to returning during the warmer months to enjoy the outside fire pit, a game of horseshoes, the lake nearby and dinner on the front deck. We have stayed in many VRBO / Home Away properties and this is one of the very best we have experienced.",
+    name: "The Smiths",
+    date_stayed: "Dec 4, 2018",
+    score: 5
+  )
+
+  Review.create!(
+    rental: alpine,
+    title: "Cute and cozy!",
+    content: "An adorable property! The place is great - clean, spacious and we loved the eat in table in the kitchen - great for the kids! The fire pit and chairs outside was a hit each night! Would absolutely rent again! ",
+    name: "Megan H.",
+    date_stayed: "Aug 10, 2018",
+    score: 5
+  )
+
+  Review.create!(
+    rental: alpine,
+    title: "That was an amazing time for us to spend time in this house. Super clean and organized.",
+    content: "We were 3 families;6 adult and 3 kids. Really perfect place for families with kids. The home owner prepared every thing(such as towels, soup, paper towels, all kitchen equipments, and so on...; the house was renewed, clean and close to lake. In overall, if I decide to go back to Tahoe for vacation, for sure I will rent this place again.",
+    name: "Mina G.",
+    date_stayed: "Aug 25, 2018",
+    score: 5
   )
 
 Review.create!(
   rental: napa,
-  title: "Peaceful retreat",
-  content: "This house was the perfect place for a relaxing getaway in the wine country. The vineyard views were stunning and the amenities were top-notch."
+  title: "Beautiful Napa River",
+  content: "Lovely 4 bdrm house with gorgeous views!!",
+  name: "Arna B.",
+  date_stayed: "Oct 6, 2022",
+  score: 5
 )
 
 Review.create!(
     rental: napa,
-    title: "Gorgeous place",
-    content: "This house was the perfect place for a relaxing getaway in the wine country. The vineyard views were stunning and the amenities were top-notch."
+    title: "Perfection in Napa",
+    content: "We stayed here for the month of July and had a wonderful vacation. It's close to downtown Napa and many wineries and restaurants but it's in a quiet family neighborhood. Linda and Joe are responsive and professional hosts. We would love to return and would highly recommend this rental.
+    ",
+    name: "Stu & Jackie B.",
+    date_stayed: "Aug 4, 2021",
+    score: 5
   )
 
+  Review.create!(
+    rental: napa,
+    title: "Excellent",
+    content: "Everything was first class and we enjoyed our stay very much.",
+    name: "Rod E.",
+    date_stayed: "Jul 22, 2021",
+    score: 5
+  )
 
+  Review.create!(
+    rental: napa,
+    title: "Restorative Month",
+    content: "We spent a month here during the pandemic as our home away from home and everyone loved it. Amazing light, beautiful views, great deck and separate yard with fire pit, and a dock that we spent time sitting on to just watch the boats go by. There's also a beautiful wildlife preserve on the other side of the house that has a great walking/running path.
+    ",
+    name: "Sandy K.",
+    date_stayed: "Mar 2, 2021",
+    score: 5
+  )
+
+  Review.create!(
+    rental: napa,
+    title: "Serene Napa escape",
+    content: "Such a beautiful, spacious home and neighborhood! Being right on the river was so peaceful, and around the front of the house is a walking trail right along the water with tons of wildlife to observe.
+
+    Since it's not a through street, the only cars driving by are the neighbors, who are very courteous. Stores and restaurants are a short drive away, yet far enough to where you're not in the middle of everything.
+    
+    Looking forward to staying again sometime!",
+    name: "Garrett G.",
+    date_stayed: "Jan 21, 2021",
+    score: 5
+  )
+
+  Review.create!(
+    rental: napa,
+    title: "Serenity on the water",
+    content: "Linda & Joe's home is absolutely wonderful. The beauty you're surrounded by here on Edgerley Island is simply unbelievable.",
+    name: "Ryan Thomas C.",
+    date_stayed: "Sep 15, 2020",
+    score: 5
+  )
+        
 Contact.create!(
     name: "John Doe",
     email: "john@doe.com",
