@@ -6,7 +6,6 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Modal from '@material-ui/core/Modal';
-import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -43,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
 const TahoeGallery = () => {
   const [tahoePics, setTahoePics] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
-  const rentalName = 'alpine';
+//   const rentalName = 'alpine';
   const classes = useStyles();
 
   useEffect(() => {

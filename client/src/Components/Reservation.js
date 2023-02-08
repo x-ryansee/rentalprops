@@ -1,47 +1,52 @@
 import React, { useState } from "react";
 import "../Styling/Reservation.css";
-import RegistrationForm from "./RegistrationForm";
+import axios from "axios";
 import VideoBackground from "./VideoBackground";
 
 const Reservation = () => {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
+  const [first_name, setFirst_Name] = useState("");
+  const [last_name, setLast_Name] = useState("");
   const [email, setEmail] = useState("");
-  const [startDate, setStartDate] = useState("");
-  const [endDate, setEndDate] = useState("");
-  const [numberOfAdults, setNumberOfAdults] = useState(1);
-  const [numberOfChildren, setNumberOfChildren] = useState(0);
-  const [location, setLocation] = useState("Tahoe");
+  const [start_date, setStart_Date] = useState("");
+  const [end_date, setEnd_Date] = useState("");
+  const [adult_guests, setAdult_Guests] = useState(1);
+  const [child_guests, setChild_Guests] = useState(0);
+  const [rental_id, setRental_Id] = useState("");
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     console.log("Form submitted");
-    console.log({
-      firstName,
-      lastName,
+    const reservation = {
+      first_name,
+      last_name,
       email,
-      startDate,
-      endDate,
-      numberOfAdults,
-      numberOfChildren,
-      location,
-    });
+      start_date,
+      end_date,
+      adult_guests,
+      child_guests,
+      rental_id,
+    };
+    try {
+      const response = await axios.post("/reservations", reservation);
+      console.log(response);
+    } catch (error) {
+      console.error(error);
+    }
   };
-
   return (
     <div>
          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
           <VideoBackground style={{ height: '100vh', width: '100vw' }} />
         </div>
     <form className="reservation-form" onSubmit={handleSubmit}>
-      <h1 className="reservation-title">Reservation</h1>
+      <h1 className="reservation-title">Reservation Inquiry</h1>
       <div className="form-field">
         <label htmlFor="first-name">First Name:</label>
         <input
           type="text"
           id="first-name"
-          value={firstName}
-          onChange={(event) => setFirstName(event.target.value)}
+          value={first_name}
+          onChange={(event) => setFirst_Name(event.target.value)}
         />
       </div>
       <div className="form-field">
@@ -49,8 +54,8 @@ const Reservation = () => {
         <input
           type="text"
           id="last-name"
-          value={lastName}
-          onChange={(event) => setLastName(event.target.value)}
+          value={last_name}
+          onChange={(event) => setLast_Name(event.target.value)}
         />
       </div>
       <div className="form-field">
@@ -67,8 +72,8 @@ const Reservation = () => {
         <input
           type="date"
           id="start-date"
-          value={startDate}
-          onChange={(event) => setStartDate(event.target.value)}
+          value={start_date}
+          onChange={(event) => setStart_Date(event.target.value)}
         />
       </div>
       <div className="form-field">
@@ -76,8 +81,8 @@ const Reservation = () => {
         <input
           type="date"
           id="end-date"
-          value={endDate}
-          onChange={(event) => setEndDate(event.target.value)}
+          value={end_date}
+          onChange={(event) => setEnd_Date(event.target.value)}
         />
       </div>
       <div className="form-field">
@@ -87,8 +92,8 @@ const Reservation = () => {
           id="number-of-adults"
           min="1"
         max="8"
-        value={numberOfAdults}
-        onChange={(event) => setNumberOfAdults(event.target.value)}
+        value={adult_guests}
+        onChange={(event) => setAdult_Guests(event.target.value)}
       />
       </div>
       <div className="form-field">
@@ -98,18 +103,18 @@ const Reservation = () => {
           id="number-of-children"
           min="0"
           max="8"
-          value={numberOfChildren}
-          onChange={(event) => setNumberOfChildren(event.target.value)}
+          value={child_guests}
+          onChange={(event) => setChild_Guests(event.target.value)}
         />
       </div>
       <div className="form-field">
-        <label htmlFor="location">Location:</label>
+        <label htmlFor="rental_id">Location:</label>
         <select
-          id="location"
-          value={location}
-          onChange={(event) => setLocation(event.target.value)}
+          id="rental_id"
+          value={rental_id}
+          onChange={(event) => setRental_Id(event.target.value)}
         >
-          <option value="Tahoe">Tahoe</option>
+          <option value="Alpine">Alpine</option>
           <option value="Napa">Napa</option>
         </select>
       </div>

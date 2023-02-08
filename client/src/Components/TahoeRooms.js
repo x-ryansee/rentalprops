@@ -68,7 +68,7 @@ const TahoeRooms = () => {
         </div>
         <div className="tahoe-rooms-info">
           <RoomIcon />
-          <h2></h2>
+          <h2>Location</h2>
           </div>
           </div>
           </div>

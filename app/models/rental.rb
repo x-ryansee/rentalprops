@@ -1,2 +1,5 @@
 class Rental < ApplicationRecord
-end
+    has_many :reservations
+    has_many :reviews
+  end
+  

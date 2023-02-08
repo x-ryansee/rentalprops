@@ -21,6 +21,33 @@ const AdminPortal = () => {
     fetchContacts()
   }, [])
 
+  const handleStatusChange = async (e, reservationId) => {
+    const response = await fetch(`/reservations/${reservationId}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        status: e.target.value
+      })
+    })
+  
+    if (response.ok) {
+      setReservations(
+        reservations.map(reservation => {
+          if (reservation.id === reservationId) {
+            return {
+              ...reservation,
+              status: e.target.value
+            }
+          }
+          return reservation
+        })
+      )
+    }
+  }
+  
+
   return (
     <div>
       <h2>Reservation Requests</h2>
@@ -47,7 +74,13 @@ const AdminPortal = () => {
               <td>{reservation.end_date}</td>
               <td>{reservation.adult_guests}</td>
               <td>{reservation.child_guests}</td>
-              <td>{reservation.status}</td>
+              <td>
+                <select value={reservation.status} onChange={e => handleStatusChange(e, reservation.id)}>
+                  <option value="Rejected">Rejected</option>
+                  <option value="Pending">Pending</option>
+                  <option value="Approved">Approved</option>
+                </select>
+              </td>
             </tr>
           ))}
         </tbody>

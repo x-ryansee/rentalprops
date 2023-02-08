@@ -5,7 +5,7 @@ class ContactsController < ApplicationController
     end
 
     def create
-        contact = contact.create!(contact_params)
+        contact = Contact.create!(contact_params)
         render json: contact, status: :created
     end
 

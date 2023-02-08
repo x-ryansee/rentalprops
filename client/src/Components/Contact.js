@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -14,9 +15,14 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Add logic to send form data to the server or process form data
-    console.log(formData);
-    setFormData({ name: "", email: "", message: "" });
+    axios.post('/contacts', formData)
+      .then(response => {
+        console.log(response.data);
+        setFormData({ name: "", email: "", message: "" });
+      })
+      .catch(error => {
+        console.log(error);
+      });
   };
 
   return (
