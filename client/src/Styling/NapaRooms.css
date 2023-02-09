@@ -1,22 +1,36 @@
-.rooms-section {
-    padding: 40px;
-    text-align: center;
-  }
-  
-  .rooms-section h2,
-  .rooms-section h3 {
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .room-icon {
-    font-size: 36px;
-    margin-right: 10px;
-  }
-  
-  .room-description {
-    margin-bottom: 20px;
+.napa-rooms-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    margin: 20px 0;
+  }
+  
+  .napa-rooms-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 20px;
+  }
+  
+  .napa-rooms-info {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .napa-rooms-info h2, .napa-rooms-info h3 {
+    margin: 10px 0;
+  }
+  
+  .napa-rooms-info p {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .napa-rooms-info svg {
+    color: #3f51b5;
+    margin-bottom: 10px;
   }
   

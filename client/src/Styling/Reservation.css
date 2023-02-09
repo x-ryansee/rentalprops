@@ -35,6 +35,11 @@
     box-shadow: 0 0 5px #333;
   }
   
+  .form-field .form-field-half {
+    flex-basis: 50%;
+    margin-right: 20px;
+  }
+  
   .submit-button {
     width: 100%;
     padding: 10px;

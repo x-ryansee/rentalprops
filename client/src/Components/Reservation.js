@@ -3,6 +3,8 @@ import "../Styling/Reservation.css";
 import axios from "axios";
 import VideoBackground from "./VideoBackground";
 import emailjs from 'emailjs-com';
+import DatePicker from "react-datepicker";
+
 
 const Reservation = () => {
   const [first_name, setFirst_Name] = useState("");
@@ -15,17 +17,22 @@ const Reservation = () => {
   const [rental_id, setRental_Id] = useState("");
   const [rentals, setRentals] = useState([]);
 
-//   const sendEmail = (e) => {
-//     e.preventDefault();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-//     emailjs.sendForm('service_q4ase0q', 'template_kg5mdh2', e.target, 'uYGC5Ml2E_SOogSlu')
-//       .then((result) => {
-//           console.log(result.text);
-//       }, (error) => {
-//           console.log(error.text);
-//       });
-//   };
+    emailjs.sendForm('service_q4ase0q', 'template_kg5mdh2', e.target, 'uYGC5Ml2E_SOogSlu')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+    handleSubmit(event);
+    sendEmail(event);
+  };
 
   useEffect(() => {
     const fetchRentals = async () => {
@@ -60,20 +67,32 @@ const Reservation = () => {
     }
   };
 
-//   const handleFormSubmit = (event) => {
-//     event.preventDefault();
-//     handleSubmit(event);
-//     sendEmail(event);
-//   };
 
   return (
     <div>
         <div>
-            <VideoBackground/>
+        <div style={{ position: 'relative' }}>
+          <img src="https://www.forestsuites.com/i/SITE_170315_17005325_XP7M1/content/CMS_190423_14211154_BLG15/8B33DF5E-061E-9638-323576857F129289.JPG" alt="My Image" width= "1000px"/>
+          <h1 style={{ color: "white", textAlign: 'center', position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', zIndex: 1, fontSize: '3rem' }}>
+              Reservation Inquiry
+            </h1>
         </div>
-    {/* <form className="reservation-form" onSubmit={handleFormSubmit}> */}
-    <form className="reservation-form" onSubmit={handleSubmit}>
+        
+        </div>
+    <form className="reservation-form" onSubmit={handleFormSubmit}>
+    {/* <form className="reservation-form" onSubmit={handleSubmit}> */}
       <h1 className="reservation-title">Reservation Inquiry</h1>
+      <div className="form-field">
+        <label htmlFor="rental_id">Location:</label>
+        <select
+          id="rental_id"
+          value={rental_id}
+          onChange={(event) => setRental_Id(event.target.value)}
+        >
+          <option value="Alpine">Alpine</option>
+          <option value="Napa">Napa</option>
+        </select>
+      </div>
       <div className="form-field">
         <label htmlFor="first-name">First Name:</label>
         <input
@@ -101,7 +120,7 @@ const Reservation = () => {
           onChange={(event) => setEmail(event.target.value)}
         />
       </div>
-      <div className="form-field">
+      {/* <div className="form-field">
         <label htmlFor="start-date">Start Date:</label>
         <input
           type="date"
@@ -118,7 +137,24 @@ const Reservation = () => {
           value={end_date}
           onChange={(event) => setEnd_Date(event.target.value)}
         />
-      </div>
+      </div> */}
+      <div className="form-field">
+      <label htmlFor="start-date">Start Date:</label>
+      <DatePicker
+        id="start-date"
+        selected={start_date}
+        onChange={date => setStart_Date(date)}
+      />
+    </div>
+    <div className="form-field">
+      <label htmlFor="end-date">End Date:</label>
+      <DatePicker
+        id="end-date"
+        selected={end_date}
+        onChange={date => setEnd_Date(date)}
+      />
+    </div>
+
       <div className="form-field">
         <label htmlFor="number-of-adults">Number of Adults:</label>
         <input
@@ -140,17 +176,6 @@ const Reservation = () => {
           value={child_guests}
           onChange={(event) => setChild_Guests(event.target.value)}
         />
-      </div>
-      <div className="form-field">
-        <label htmlFor="rental_id">Location:</label>
-        <select
-          id="rental_id"
-          value={rental_id}
-          onChange={(event) => setRental_Id(event.target.value)}
-        >
-          <option value="Alpine">Alpine</option>
-          <option value="Napa">Napa</option>
-        </select>
       </div>
       <button type="submit" className="submit-button">
         Submit
