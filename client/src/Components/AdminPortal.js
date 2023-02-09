@@ -44,6 +44,22 @@ const AdminPortal = () => {
     }
   };
 
+  const handleDelete = async (reservationId) => {
+    const response = await fetch(`/reservations/${reservationId}`, {
+      method: 'DELETE'
+    });
+
+    if (response.ok) {
+      const fetchReservations = async () => {
+        const res = await fetch('/reservations');
+        const json = await res.json();
+        setReservations(json);
+      };
+
+      fetchReservations();
+    }
+  };
+
   return (
     <div className="hotel-booking-container">
       <h2 className="hotel-booking-header">Reservation Requests</h2>
@@ -59,7 +75,8 @@ const AdminPortal = () => {
             <th>Child Guests</th>
             <th>Rental</th>
             <th>Status</th>
-  
+            {/* Add new column */}
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -74,11 +91,23 @@ const AdminPortal = () => {
               <td className="hotel-booking-cell">{reservation.child_guests}</td>
               <td className="hotel-booking-cell">{reservation.rental_id}</td>
               <td className="hotel-booking-cell">
-                <select value={reservation.status} onChange={e => handleStatusChange(e, reservation.id)} className="hotel-booking-select">
+                <select
+                  value={reservation.status}
+                  onChange={e => handleStatusChange(e, reservation.id)}
+                  className="hotel-booking-select"
+                >
                   <option value="Rejected">Rejected</option>
                   <option value="Pending">Pending</option>
                   <option value="Approved">Approved</option>
                 </select>
+              </td>
+              {/* Show delete button if status is "Rejected" */}
+              <td className="hotel-booking-cell">
+                {reservation.status === "Rejected" ? (
+                  <button onClick={() => handleDelete(reservation.id)}>
+                    Delete
+                  </button>
+                ) : null}
               </td>
             </tr>
           ))}
