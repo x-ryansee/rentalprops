@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import PersonIcon from '@mui/icons-material/Person';
 import "../Styling/Navbar.css";
 
 const Navbar = () => {
@@ -42,10 +43,10 @@ const Navbar = () => {
               )}
             </div>
             <Link to="/reserve">Reserve</Link>
-            <Link to="/calendar">Calendar</Link>
+            {/* <Link to="/calendar">Calendar</Link> */}
             <Link to="/blog">Blog</Link>
             <Link to="/contact">Contact</Link>
-            <Link to="/signin">Login</Link>
+            <Link to="/signin"><PersonIcon/></Link>
           </div>
         </div>
       </div>

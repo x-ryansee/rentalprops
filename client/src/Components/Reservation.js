@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../Styling/Reservation.css";
 import axios from "axios";
 import VideoBackground from "./VideoBackground";
+import emailjs from 'emailjs-com';
 
 const Reservation = () => {
   const [first_name, setFirst_Name] = useState("");
@@ -12,6 +13,31 @@ const Reservation = () => {
   const [adult_guests, setAdult_Guests] = useState(1);
   const [child_guests, setChild_Guests] = useState(0);
   const [rental_id, setRental_Id] = useState("");
+  const [rentals, setRentals] = useState([]);
+
+//   const sendEmail = (e) => {
+//     e.preventDefault();
+
+//     emailjs.sendForm('service_q4ase0q', 'template_kg5mdh2', e.target, 'uYGC5Ml2E_SOogSlu')
+//       .then((result) => {
+//           console.log(result.text);
+//       }, (error) => {
+//           console.log(error.text);
+//       });
+//   };
+
+
+  useEffect(() => {
+    const fetchRentals = async () => {
+      try {
+        const response = await axios.get("/rentals");
+        setRentals(response.data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchRentals();
+  }, []);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -33,11 +59,19 @@ const Reservation = () => {
       console.error(error);
     }
   };
+
+//   const handleFormSubmit = (event) => {
+//     event.preventDefault();
+//     handleSubmit(event);
+//     sendEmail(event);
+//   };
+
   return (
     <div>
-         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-          <VideoBackground style={{ height: '100vh', width: '100vw' }} />
+        <div>
+            <VideoBackground/>
         </div>
+    {/* <form className="reservation-form" onSubmit={handleFormSubmit}> */}
     <form className="reservation-form" onSubmit={handleSubmit}>
       <h1 className="reservation-title">Reservation Inquiry</h1>
       <div className="form-field">

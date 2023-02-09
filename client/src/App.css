@@ -34,3 +34,10 @@
     transform: rotate(360deg);
   }
 }
+
+#video {
+  display: block;
+  margin: 0 auto 1cm;
+  width: 80%;
+  height: 770px;
+}

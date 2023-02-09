@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import "../Styling/AdminPortal.css";
 
 const AdminPortal = () => {
   const [reservations, setReservations] = useState([])
@@ -30,28 +31,23 @@ const AdminPortal = () => {
       body: JSON.stringify({
         status: e.target.value
       })
-    })
+    });
   
     if (response.ok) {
-      setReservations(
-        reservations.map(reservation => {
-          if (reservation.id === reservationId) {
-            return {
-              ...reservation,
-              status: e.target.value
-            }
-          }
-          return reservation
-        })
-      )
-    }
-  }
+      const fetchReservations = async () => {
+        const res = await fetch('/reservations');
+        const json = await res.json();
+        setReservations(json);
+      };
   
+      fetchReservations();
+    }
+  };
 
   return (
-    <div>
-      <h2>Reservation Requests</h2>
-      <table>
+    <div className="hotel-booking-container">
+      <h2 className="hotel-booking-header">Reservation Requests</h2>
+      <table className="hotel-booking-table">
         <thead>
           <tr>
             <th>First Name</th>
@@ -61,21 +57,24 @@ const AdminPortal = () => {
             <th>End Date</th>
             <th>Adult Guests</th>
             <th>Child Guests</th>
+            <th>Rental</th>
             <th>Status</th>
+  
           </tr>
         </thead>
         <tbody>
           {reservations.map(reservation => (
-            <tr key={reservation.id}>
-              <td>{reservation.first_name}</td>
-              <td>{reservation.last_name}</td>
-              <td>{reservation.email}</td>
-              <td>{reservation.start_date}</td>
-              <td>{reservation.end_date}</td>
-              <td>{reservation.adult_guests}</td>
-              <td>{reservation.child_guests}</td>
-              <td>
-                <select value={reservation.status} onChange={e => handleStatusChange(e, reservation.id)}>
+            <tr key={reservation.id} className="hotel-booking-row">
+              <td className="hotel-booking-cell">{reservation.first_name}</td>
+              <td className="hotel-booking-cell">{reservation.last_name}</td>
+              <td className="hotel-booking-cell">{reservation.email}</td>
+              <td className="hotel-booking-cell">{reservation.start_date}</td>
+              <td className="hotel-booking-cell">{reservation.end_date}</td>
+              <td className="hotel-booking-cell">{reservation.adult_guests}</td>
+              <td className="hotel-booking-cell">{reservation.child_guests}</td>
+              <td className="hotel-booking-cell">{reservation.rental_id}</td>
+              <td className="hotel-booking-cell">
+                <select value={reservation.status} onChange={e => handleStatusChange(e, reservation.id)} className="hotel-booking-select">
                   <option value="Rejected">Rejected</option>
                   <option value="Pending">Pending</option>
                   <option value="Approved">Approved</option>
@@ -85,8 +84,8 @@ const AdminPortal = () => {
           ))}
         </tbody>
       </table>
-      <h2>Messages</h2>
-      <table>
+      <h2 className="hotel-booking-header">Messages</h2>
+      <table className="hotel-booking-table">
         <thead>
           <tr>
             <th>Name</th>
@@ -96,10 +95,10 @@ const AdminPortal = () => {
         </thead>
         <tbody>
           {contacts.map(contact => (
-            <tr key={contact.id}>
-              <td>{contact.name}</td>
-              <td>{contact.email}</td>
-              <td>{contact.message}</td>
+            <tr key={contact.id} className="hotel-booking-row">
+              <td className="hotel-booking-cell">{contact.name}</td>
+              <td className="hotel-booking-cell">{contact.email}</td>
+              <td className="hotel-booking-cell">{contact.message}</td>
             </tr>
           ))}
         </tbody>

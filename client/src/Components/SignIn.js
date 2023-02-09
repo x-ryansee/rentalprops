@@ -21,7 +21,7 @@ function SignIn({user, setUser}) {
     .then((data) => {
       if (!data.error) {
       setUser(data)
-      navigate("/")
+      navigate("/signin")
       } else {
         setError(data.error)
       }
