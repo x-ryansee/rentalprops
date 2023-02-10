@@ -1,15 +1,13 @@
 .navbar {
     background-color: rgb(233, 233, 233);
-    padding: 1rem;
+    padding: 1.5rem;
     opacity: 1;
     transition: opacity 0.2s ease-in-out;
-    height: "500px";
   }
   nav a {
     color: #333;
     text-decoration: none;
     margin-right: 1rem;
-    font-weight: bold;
     }
     
     nav ul {
@@ -18,6 +16,7 @@
     background-color: #F5F5F5;
     display: block;
     align-items: center;
+    letter-spacing: .02em
     }
     
     nav ul li:hover > ul {

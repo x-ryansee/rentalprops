@@ -1,6 +1,6 @@
 class ReservationsController < ApplicationController
     def index
-        render json: Reservation.all
+        render json: Reservation.all.order("status ASC")
     end
 
     def show

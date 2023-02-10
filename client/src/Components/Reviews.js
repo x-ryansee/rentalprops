@@ -26,6 +26,7 @@ const Reviews = () => {
           <p className="review-card-content">{review.content}</p>
           <p className="review-card-name">{review.name}</p>
           <p className="review-card-date">{review.date_stayed}</p>
+          <p className="review-card-rental">{review.rental.id}</p>
           <div className="review-card-rating">
             {Array(review.score)
               .fill("⭐️")

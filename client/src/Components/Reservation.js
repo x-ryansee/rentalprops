@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../Styling/Reservation.css";
 import axios from "axios";
-import VideoBackground from "./VideoBackground";
 import emailjs from 'emailjs-com';
 import DatePicker from "react-datepicker";
 
@@ -72,7 +71,7 @@ const Reservation = () => {
     <div>
         <div>
         <div style={{ position: 'relative' }}>
-          <img src="https://www.forestsuites.com/i/SITE_170315_17005325_XP7M1/content/CMS_190423_14211154_BLG15/8B33DF5E-061E-9638-323576857F129289.JPG" alt="My Image" width= "1000px"/>
+          <img src="https://www.forestsuites.com/i/SITE_170315_17005325_XP7M1/content/CMS_190423_14211154_BLG15/8B33DF5E-061E-9638-323576857F129289.JPG" alt="My Pic" width= "1200px"/>
           <h1 style={{ color: "white", textAlign: 'center', position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', zIndex: 1, fontSize: '3rem' }}>
               Reservation Inquiry
             </h1>
@@ -81,7 +80,6 @@ const Reservation = () => {
         </div>
     <form className="reservation-form" onSubmit={handleFormSubmit}>
     {/* <form className="reservation-form" onSubmit={handleSubmit}> */}
-      <h1 className="reservation-title">Reservation Inquiry</h1>
       <div className="form-field">
         <label htmlFor="rental_id">Location:</label>
         <select
@@ -89,28 +87,26 @@ const Reservation = () => {
           value={rental_id}
           onChange={(event) => setRental_Id(event.target.value)}
         >
-          <option value="Alpine">Alpine</option>
-          <option value="Napa">Napa</option>
+          <option value="alpine">Alpine</option>
+          <option value="napa">Napa</option>
         </select>
       </div>
       <div className="form-field">
         <label htmlFor="first-name">First Name:</label>
         <input
-          type="text"
-          id="first-name"
-          value={first_name}
-          onChange={(event) => setFirst_Name(event.target.value)}
+            type="text"
+            id="first-name"
+            value={first_name}
+            onChange={(event) => setFirst_Name(event.target.value)}
         />
-      </div>
-      <div className="form-field">
         <label htmlFor="last-name">Last Name:</label>
         <input
-          type="text"
-          id="last-name"
-          value={last_name}
-          onChange={(event) => setLast_Name(event.target.value)}
+            type="text"
+            id="last-name"
+            value={last_name}
+            onChange={(event) => setLast_Name(event.target.value)}
         />
-      </div>
+</div>
       <div className="form-field">
         <label htmlFor="email">Email:</label>
         <input
@@ -145,8 +141,6 @@ const Reservation = () => {
         selected={start_date}
         onChange={date => setStart_Date(date)}
       />
-    </div>
-    <div className="form-field">
       <label htmlFor="end-date">End Date:</label>
       <DatePicker
         id="end-date"
@@ -165,8 +159,6 @@ const Reservation = () => {
         value={adult_guests}
         onChange={(event) => setAdult_Guests(event.target.value)}
       />
-      </div>
-      <div className="form-field">
         <label htmlFor="number-of-children">Number of Children:</label>
         <input
           type="number"

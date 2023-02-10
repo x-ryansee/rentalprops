@@ -1,7 +1,6 @@
 .App {
   text-align: center;
   position: relative;
-  top: 50px;
 }
 
 
@@ -35,9 +34,3 @@
   }
 }
 
-#video {
-  display: block;
-  margin: 0 auto 1cm;
-  width: 80%;
-  height: 770px;
-}

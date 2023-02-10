@@ -42,13 +42,16 @@ const useStyles = makeStyles((theme) => ({
 const TahoeGallery = () => {
   const [tahoePics, setTahoePics] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
-//   const rentalName = 'alpine';
+  const rentalName = 'alpine';
   const classes = useStyles();
 
   useEffect(() => {
     fetch('/galleries')
       .then((r) => r.json())
-      .then((data) => setTahoePics(data));
+      .then((data) => {
+      const foundGallery = data.filter((gallery) => gallery.rental.name.toLowerCase() === rentalName.toLowerCase());
+setTahoePics(foundGallery);
+      })
   }, []);
 
   if (!tahoePics) {

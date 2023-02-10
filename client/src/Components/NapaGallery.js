@@ -48,7 +48,11 @@ const NapaGallery = () => {
   useEffect(() => {
     fetch('/galleries')
       .then((r) => r.json())
-      .then((data) => setNapaPics(data));
+      .then((data) => {
+        const foundGallery = data.filter((gallery) => gallery.rental.name.toLowerCase() === rentalName.toLowerCase());
+
+        setNapaPics(foundGallery);
+      })
   }, []);
 
   if (!napaPics) {

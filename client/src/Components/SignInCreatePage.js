@@ -20,7 +20,7 @@ function SignInCreatePage({user, setUser}) {
     return (
       <div>
          <div>
-        <div className="modalParent">
+        <div style={{margin: "80px"}}className="modalParent">
 
         {user ? <button className="button-create" onClick={logout}>Logout</button> : null}
         <div>

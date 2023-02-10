@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Calendar from './Calendar'
 import "../Styling/AdminPortal.css";
 
 const AdminPortal = () => {
@@ -113,7 +114,7 @@ const AdminPortal = () => {
           ))}
         </tbody>
       </table>
-      <h2 className="hotel-booking-header">Messages</h2>
+      <h2 style={{margin: "80px", marginBottom: "80px"}} className="hotel-booking-header">Messages</h2>
       <table className="hotel-booking-table">
         <thead>
           <tr>
@@ -132,6 +133,7 @@ const AdminPortal = () => {
           ))}
         </tbody>
       </table>
+      <Calendar style={{margin: "80px"}} />
     </div>
   );
 };
