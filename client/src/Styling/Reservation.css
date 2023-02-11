@@ -1,47 +1,58 @@
 .reservation-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 40px;
+    width: 400px;
+    margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.8);
-  }
-  
-  .form-field {
-    margin: 20px 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  .form-field label {
-    width: 120px;
-    text-align: right;
-    margin-right: 20px;
-  }
-  
-  .form-field input, .form-field select {
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid gray;
-  }
-  
-  .submit-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: lightblue;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #333;
   }
   
   .reservation-title {
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 2rem;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px #333;
+  }
+  
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .form-field label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-field input[type="text"],
+  .form-field input[type="email"],
+  .form-field select {
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 5px #333;
+  }
+  
+  .form-field .form-field-half {
+    flex-basis: 50%;
+    margin-right: 20px;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .submit-button:hover {
+    background-color: #444;
   }
   

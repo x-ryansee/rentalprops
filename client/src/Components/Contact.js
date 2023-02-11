@@ -26,7 +26,7 @@ const Contact = () => {
   };
 
   return (
-    <div style={{ backgroundColor: "#E6E2D3", padding: 20, textAlign: "center", fontFamily: "'Georgia', serif" }}>
+    <div style={{ backgroundColor: "#E6E2D3", padding: 20, textAlign: "center", margin: "80px"}}>
       <h1 style={{ fontSize: 36, color: "#6F4E37" }}>Contact Us</h1>
       <form onSubmit={handleSubmit}>
         <div>
