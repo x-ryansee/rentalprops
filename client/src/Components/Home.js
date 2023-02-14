@@ -27,7 +27,7 @@ const Home = () => {
 
         </div>
         <RentalButtonsHome />
-        <Reviews />
+        <Reviews style={{  }}/>
       </div>
     );
   };

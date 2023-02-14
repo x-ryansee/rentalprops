@@ -2,7 +2,7 @@ import React from 'react';
 
 const RentalButtonsHome = () => {
   return (
-    <div style={{ display: "flex", justifyContent: "space-between" }}>
+    <div style={{ display: "flex", justifyContent: "space-between", marginLeft: "5cm", marginRight: "5cm" }}>
     <div style={{ width: "45%", padding: "1rem" }}>Riverfront Idyll in Napa Valley
       <img
         src="https://images.squarespace-cdn.com/content/v1/5db4c936bed191510d3b2128/1632454213657-HD7TWR635SXNJ1BCF2FC/daniel-salgado-MF2KORFe1OE-unsplash.jpg?format=1500w"

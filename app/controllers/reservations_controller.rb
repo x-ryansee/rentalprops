@@ -9,15 +9,21 @@ class ReservationsController < ApplicationController
     end
     
     def create
-        @rental = Rental.find_by(name: params[:rental_id])
+        @rental = Rental.find_by(params[:rental_id])
         @reservation = Reservation.new(reservation_params)
         @reservation.rental = @rental
-        if @reservation.save
-          redirect_to @reservation, notice: 'Reservation was successfully created.'
+    
+        overlapping_reservations = Reservation.where("start_date <= ? AND end_date >= ?", @reservation.end_date, @reservation.start_date)
+                            .where(rental: @rental)
+                            .where.not(id: @reservation.id)
+    
+        if overlapping_reservations.empty? && @reservation.save
+            redirect_to @reservation, notice: 'Reservation was successfully created.'
         else
-          render :new
+            render json: { status: 'error', message: 'Overlapping reservation exists' }, status: :unprocessable_entity
         end
     end
+    
       
     def update
         @reservation = Reservation.find(params[:id])

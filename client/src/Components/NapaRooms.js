@@ -15,12 +15,11 @@ const NapaRooms = () => {
           <BedIcon fontSize="large" />
           <h3>Bedrooms: 4 (Sleeps: 8)</h3>
           <p>
-            Brand new beds, mattresses, linens and nightstands July 2019. The
-            house has an entry and 2 car garage on the ground floor. There is a
-            queen and two twins in the two bedrooms on the second (main) floor and
-            2 large master suites on the third floor each with king beds. Almost
-            all of the furniture is brand new as of June/July 2019. Every bedroom
-            has an unobstructed panoramic view of the Napa River and off in the
+            A queen and two twins in the two bedrooms on the second (main) floor.
+            <br />
+            2 large master suites on the third floor each with king beds.
+            <br />
+            Every bedroom has an unobstructed panoramic view of the Napa River and off in the
             distance the Eastern Hills and vineyards, with the exception of the
             twin bedroom which has a wonderful view of the wildlife sanctuary
             lagoon and the western hills.
@@ -29,11 +28,22 @@ const NapaRooms = () => {
         <div className="napa-rooms-info">
           <BathtubIcon fontSize="large" />
           <h2>Bathrooms: 3</h2>
-          <p>New fixtures 2019.</p>
+          <p>
+            2nd Floor Hall Bath: Toilet · Combination tub/shower
+            <br />
+            3rd Floor Master Bath #1: Toilet · Shower · Oversized tub
+            <br />
+            3rd Floor Master Bath #2:: Toilet · Combination tub/shower
+          </p>
         </div>
         <div className="napa-rooms-info">
           <KitchenIcon fontSize="large" />
           <h2>Kitchen</h2>
+          <p>
+          Newly remodeled with stainless steel appliances.
+          <br />
+          Fully stocked with plenty of cookware, coffee maker, blender, toaster, Cuisinart, etc.
+          </p>
         </div>
         <div className="napa-rooms-info">
           <PeopleIcon fontSize="large" />
