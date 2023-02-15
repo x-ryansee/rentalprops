@@ -1,6 +1,6 @@
 class ReservationsController < ApplicationController
     def index
-        render json: Reservation.all.order("status ASC")
+        render json: Reservation.all
     end
 
     def show
@@ -17,29 +17,22 @@ class ReservationsController < ApplicationController
         else
           render :new
         end
-    end
+      end
       
-    def update
-        @reservation = Reservation.find(params[:id])
-        if @reservation.update(reservation_params)
-          render json: { status: 'success', message: 'Reservation was successfully updated.', reservation: @reservation }
-        else
-          render json: { status: 'error', message: @reservation.errors.full_messages }, status: :unprocessable_entity
-        end
-    end
 
-    def destroy
-        @reservation = Reservation.find(params[:id])
-        if @reservation.destroy
-          render json: { status: 'success', message: 'Reservation was successfully deleted.' }
-        else
-          render json: { status: 'error', message: @reservation.errors.full_messages }, status: :unprocessable_entity
-        end
+def update
+    @reservation = Reservation.find(params[:id])
+    if @reservation.update(reservation_params)
+        redirect_to @reservation, notice: 'Reservation was successfully updated.'
+    else
+        render :edit
     end
+end
+  
+private
+def reservation_params
+  params.permit(:first_name, :last_name, :email, :start_date, :end_date, :adult_guests, :child_guests, :rental_id)
+end
 
-    private
 
-    def reservation_params
-      params.permit(:first_name, :last_name, :email, :start_date, :end_date, :adult_guests, :child_guests, :status, :id, :rental_id)
-    end
 end
