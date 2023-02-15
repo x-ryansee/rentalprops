@@ -1,0 +1,37 @@
+.calendar-container {
+    padding: 20px;
+  }
+
+  .react-calendar {
+    width: 400px;
+    height: 400px;
+  }
+
+  .react-calendar__tile {
+    border-radius: 50%;
+  }
+
+  .blocked {
+    background-color: red;
+    color: white;
+  }
+
+  .available {
+    background-color: green;
+    color: white;
+  }
+
+  .selected.start {
+    background-color: blue;
+    color: white;
+  }
+
+  .selected.range {
+    background-color: purple;
+    color: white;
+  }
+
+  .selected.between {
+    background-color: yellow;
+    color: black;
+  }

@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Calendar from 'react-calendar';
 import axios from 'axios';
+import "../Styling/BookingCalendar.css"
 
 const BookingCalendar = ({ selectedStart, selectedEnd, onSelectDate }) => {
   const [reservations, setReservations] = useState([]);
   const [blockedDates, setBlockedDates] = useState([]);
+  const [start, setStart] = useState(null);
+  const [end, setEnd] = useState(null);
 
   useEffect(() => {
     axios.get('/reservations')
@@ -31,16 +34,16 @@ const BookingCalendar = ({ selectedStart, selectedEnd, onSelectDate }) => {
       if (isBlocked(date)) {
         return 'blocked';
       } else if (
-        selectedStart && 
-        !selectedEnd && 
-        selectedStart.toDateString() === date.toDateString()
+        start && 
+        !end && 
+        start.toDateString() === date.toDateString()
       ) {
         return 'selected start';
       } else if (
-        selectedStart && 
-        selectedEnd &&
-        date >= selectedStart && 
-        date <= selectedEnd
+        start && 
+        end &&
+        date >= start && 
+        date <= end
       ) {
         return 'selected range';
       } else {
@@ -50,15 +53,28 @@ const BookingCalendar = ({ selectedStart, selectedEnd, onSelectDate }) => {
   };
 
   const handleSelect = date => {
-    if (isBlocked(date)) return;
-    if (!selectedStart) {
-      onSelectDate({ start: date, end: null });
-    } else if (selectedStart && !selectedEnd && date > selectedStart) {
-      onSelectDate({ start: selectedStart, end: date });
-    } else {
-      onSelectDate({ start: date, end: null });
+    console.log('Clicked date:', date);
+    console.log('Selected start date:', start);
+    console.log('Selected end date:', end);
+  
+    if (isBlocked(date)) {
+      console.log('Date is blocked');
+      return;
+    }
+  
+    if (!start) {
+      console.log('Setting start date:', date);
+      setStart(date);
+      setEnd(null);
+    } else if (start && !end && date > start) {
+      console.log('Setting end date:', date);
+      setEnd(date);
+    } else if (start && end) {
+      console.log('Clearing dates');
+      onSelectDate({ start: start, end: end });
     }
   };
+  
 
   return (
     <div className="calendar-container">

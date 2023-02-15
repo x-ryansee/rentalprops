@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Calendar from './Calendar'
+
 import "../Styling/AdminPortal.css";
 
 const AdminPortal = () => {
@@ -133,7 +134,7 @@ const AdminPortal = () => {
           ))}
         </tbody>
       </table>
-      <Calendar style={{margin: "80px"}} />
+      <Calendar />
     </div>
   );
 };
