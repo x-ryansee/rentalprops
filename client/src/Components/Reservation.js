@@ -17,6 +17,7 @@ const Reservation = () => {
   const [rental_id, setRental_Id] = useState("");
   const [rentals, setRentals] = useState([]);
   const [dates, setDates] = useState({ startDate: null, endDate: null });
+  
 
   const onSelectDate = (date) => {
     if (!dates.startDate || (dates.startDate && dates.endDate)) {
@@ -26,6 +27,7 @@ const Reservation = () => {
         setDates({ ...dates, endDate: date });
       } else {
         setDates({ startDate: date, endDate: null });
+        console.log(start_date)
       }
     }
   };
@@ -46,7 +48,6 @@ const Reservation = () => {
     await handleSubmit(event);
     sendEmail(event);
   };
-  
 
   useEffect(() => {
     const fetchRentals = async () => {

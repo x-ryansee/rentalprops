@@ -45,22 +45,19 @@ class ReservationsController < ApplicationController
 
     private
 
-    def reservation_params
-        start_date = params[:start_date] || {}
-        end_date = params[:end_date] || {}
-      
-        params.permit(
-          :first_name,
-          :last_name,
-          :email,
-          :adult_guests,
-          :child_guests,
-          :rental_id,
-        ).merge({
-          start_date: start_date[:start],
-          end_date: end_date[:end]
-        })
-      end
+def reservation_params
+  params.permit(
+    :first_name,
+    :last_name,
+    :email,
+    :adult_guests,
+    :child_guests,
+    :rental_id,
+    start_date: [:start, :end],
+    end_date: [:start, :end]
+  )
+end
+    
       
       
 end

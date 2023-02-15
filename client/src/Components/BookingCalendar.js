@@ -56,25 +56,28 @@ const BookingCalendar = ({ selectedStart, selectedEnd, onSelectDate }) => {
     console.log('Clicked date:', date);
     console.log('Selected start date:', start);
     console.log('Selected end date:', end);
-  
+
     if (isBlocked(date)) {
       console.log('Date is blocked');
       return;
     }
-  
+
     if (!start) {
       console.log('Setting start date:', date);
+      onSelectDate({ start: date, end: null });
       setStart(date);
       setEnd(null);
     } else if (start && !end && date > start) {
       console.log('Setting end date:', date);
+      onSelectDate({ start: start, end: date });
       setEnd(date);
     } else if (start && end) {
       console.log('Clearing dates');
-      onSelectDate({ start: start, end: end });
+      onSelectDate({ start: null, end: null });
+      setStart(null);
+      setEnd(null);
     }
   };
-  
 
   return (
     <div className="calendar-container">
