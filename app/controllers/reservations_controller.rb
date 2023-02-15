@@ -53,8 +53,8 @@ def reservation_params
     :adult_guests,
     :child_guests,
     :rental_id,
-    start_date: [:start, :end],
-    end_date: [:start, :end]
+    :start_date,
+    :end_date
   )
 end
     
