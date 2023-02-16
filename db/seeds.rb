@@ -52,7 +52,7 @@ Reservation.create!(
   rental: alpine,
   start_date: "2023-02-04",
   end_date: "2023-03-04",
-  first_name: "Jane",
+  first_name: "John",
   last_name: "Doe",
   email: "john@example.com",
   adult_guests: 4,
@@ -378,134 +378,165 @@ Review.create!(
     score: 5
   )
         
-Contact.create!(
-    name: "John Doe",
-    email: "john@doe.com",
-    message: "I'd like to rent"
-)
-
-Contact.create!(
-    name: "Jane Doe",
-    email: "jane@doe.com",
-    message: "I'd like to rent"
-)
+  Contact.create!(
+    name: "Bob Smith",
+    email: "bob@smith.com",
+    message: "I'm interested in renting the property. Can you provide more information about the rental process and availability?"
+    )
+    
+    Contact.create!(
+    name: "Samantha Lee",
+    email: "sam@lee.com",
+    message: "Hi, I saw the property listing online and I'm interested in renting it. Is there an open house I can attend to view the property in person?"
+    )
+    
+    Contact.create!(
+    name: "Michael Chen",
+    email: "michael@chen.com",
+    message: "I'm looking to rent a new place and your property caught my eye. Can you tell me more about the neighborhood and nearby amenities?"
+    )
+    
+    
 
 
 
 # Gallery seed data
 Gallery.create!(
   rental: alpine,
-  image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/85b6b986.f10.jpg"
+  image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/85b6b986.f10.jpg",
+  description: "Remodeled kitchen"
 )
 
 Gallery.create!(
     rental: alpine,
-    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/e81e58e5.f10.jpg"
+    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/e81e58e5.f10.jpg",
+  description: "Home exterior and fire pit"
   )
 
   Gallery.create!(
     rental: alpine,
-    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/128063da.f10.jpg"
+    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/128063da.f10.jpg",
+    description: "Living room"
   )
 
   Gallery.create!(
     rental: alpine,
-    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/e29ac7c0.f10.jpg"
+    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/e29ac7c0.f10.jpg",
+    description: "Lakeview dining"
   )
 
   Gallery.create!(
     rental: alpine,
-    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/98a3ad2f.f10.jpg"
+    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/98a3ad2f.f10.jpg",
+    description: "Lakeview deck"
   )
 
   Gallery.create!(
     rental: alpine,
-    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/f8ad777e.f10.jpg"
+    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/f8ad777e.f10.jpg",
+    description: "Adirondack chairs"
   )
 
   Gallery.create!(
     rental: alpine,
-    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/9c62e32a.f10.jpg"
+    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/9c62e32a.f10.jpg",
+    description: "Living Room"
   )
 
   Gallery.create!(
     rental: alpine,
-    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/964c02fa.f10.jpg"
+    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/964c02fa.f10.jpg",
+    description: "Dining Area"
   )
 
   Gallery.create!(
     rental: alpine,
-    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/5d6b53ae.f10.jpg"
+    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/5d6b53ae.f10.jpg",
+    description: "Dining Area"
   )
 
   Gallery.create!(
     rental: alpine,
-    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/954f55c1.f10.jpg"
+    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/954f55c1.f10.jpg",
+    description: "Living room view from the kitchen"
   )
 
   Gallery.create!(
     rental: alpine,
-    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/14637f2a.f10.jpg"
+    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/14637f2a.f10.jpg",
+    description: ""
   )
 
   Gallery.create!(
     rental: alpine,
-    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/32657dc8.f10.jpg"
+    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/32657dc8.f10.jpg",
+    description: ""
   )
 
   Gallery.create!(
     rental: alpine,
-    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/db43bc2e.f10.jpg"
+    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/db43bc2e.f10.jpg",
+    description: ""
   )
 
   Gallery.create!(
     rental: alpine,
-    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/fea8fd6d.f10.jpg"
+    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/fea8fd6d.f10.jpg",
+    description: ""
   )
 
   Gallery.create!(
     rental: alpine,
-    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/f4fc8cdd.f10.jpg"
+    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/f4fc8cdd.f10.jpg",
+    description: ""
   )
 
   Gallery.create!(
     rental: alpine,
-    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/7d51250e.f10.jpg"
+    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/7d51250e.f10.jpg",
+    description: ""
   )
 
   Gallery.create!(
     rental: alpine,
-    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/eb10695f.f10.jpg"
+    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/eb10695f.f10.jpg",
+    description: ""
   )
 
   Gallery.create!(
     rental: alpine,
-    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/4eaa665b.f10.jpg"
+    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/4eaa665b.f10.jpg",
+    description: ""
   )
 
   Gallery.create!(
     rental: alpine,
-    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/3cc5bbfb.f10.jpg"
+    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/3cc5bbfb.f10.jpg",
+    description: ""
   )
 
   Gallery.create!(
     rental: alpine,
-    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/979c4dd8.f10.jpg"
+    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/979c4dd8.f10.jpg",
+    description: ""
   )
 
   Gallery.create!(
     rental: alpine,
-    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/d161d7cf.f10.jpg"
+    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/d161d7cf.f10.jpg",
+    description: ""
   )
 
   Gallery.create!(
     rental: alpine,
-    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/46a0884f.f10.jpg"
+    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/46a0884f.f10.jpg",
+    description: ""
   )
 
   Gallery.create!(
     rental: alpine,
-    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/b04637f2.f10.jpg"
+    image: "https://media.vrbo.com/lodging/34000000/33980000/33979800/33979741/b04637f2.f10.jpg",
+    description: ""
   )
 
   Gallery.create!(

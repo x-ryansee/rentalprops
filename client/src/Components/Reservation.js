@@ -108,8 +108,8 @@ const Reservation = () => {
           onChange={(event) => setRental_Id(event.target.value)}
         >
           <option value="">Select a location</option>
-          <option value="9">Alpine</option>
-          <option value="10">Napa</option>
+          <option value="1">Alpine</option>
+          <option value="2">Napa</option>
         </select>
 
       </div>

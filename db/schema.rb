@@ -25,6 +25,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_31_230441) do
   create_table "galleries", force: :cascade do |t|
     t.bigint "rental_id", null: false
     t.string "image"
+    t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["rental_id"], name: "index_galleries_on_rental_id"

@@ -3,6 +3,7 @@ class CreateGalleries < ActiveRecord::Migration[7.0]
     create_table :galleries do |t|
       t.belongs_to :rental, null: false, foreign_key: true
       t.string :image
+      t.string :description
 
       t.timestamps
     end

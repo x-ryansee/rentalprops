@@ -78,6 +78,8 @@ const NapaRooms = () => {
         <p>
         Beside the spacious main floor deck there is a third story balcony fronting the River and the eastern hills providing outdoor access to the two third floor master suites.
         </p>
+        </div>
+        <div className="napa-rooms-info">
         <RoomIcon/>
         <h2>Lawn/Garden</h2>
         <p>
