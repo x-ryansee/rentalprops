@@ -83,7 +83,7 @@ const AdminPortal = () => {
         </thead>
         <tbody>
           {reservations.map(reservation => (
-            <tr key={reservation.id} className="hotel-booking-row">
+            <tr key={reservation.id} className={`hotel-booking-row ${reservation.status === 'Approved' ? 'approved' : reservation.status === 'Rejected' ? 'rejected' : ''}`}>
               <td className="hotel-booking-cell">{reservation.first_name}</td>
               <td className="hotel-booking-cell">{reservation.last_name}</td>
               <td className="hotel-booking-cell">{reservation.email}</td>
@@ -134,7 +134,10 @@ const AdminPortal = () => {
           ))}
         </tbody>
       </table>
-      <Calendar />
+      <div style={{ margin: "50px", paddingRight: "1cm"}} >
+            <h2>Calendars</h2>
+      <Calendar/>
+      </div>
     </div>
   );
 };

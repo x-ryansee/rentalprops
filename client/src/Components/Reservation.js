@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "../Styling/Reservation.css";
 import axios from "axios";
 import emailjs from 'emailjs-com';
-import DatePicker from "react-datepicker";
 import BookingCalendar from "./BookingCalendar";
 
 
@@ -11,7 +10,7 @@ const Reservation = () => {
   const [last_name, setLast_Name] = useState("");
   const [email, setEmail] = useState("");
   const [start_date, setStart_Date] = useState("");
-  const [end_date, setEnd_Date] = useState("");
+  // const [end_date, setEnd_Date] = useState("");
   const [adult_guests, setAdult_Guests] = useState(1);
   const [child_guests, setChild_Guests] = useState(0);
   const [rental_id, setRental_Id] = useState("");
@@ -137,7 +136,7 @@ const Reservation = () => {
         />
       </div>
       <BookingCalendar onSelectDate={onSelectDate}/>
-      <div className="form-field">
+      <div style={{ margin: "50px"}} className="form-field">
         <label htmlFor="number-of-adults">Number of Adults:</label>
         <input
           type="number"

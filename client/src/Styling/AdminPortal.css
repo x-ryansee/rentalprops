@@ -61,3 +61,11 @@ body {
     color: #333;
   }
   
+  .hotel-booking-row.approved {
+    background-color: green;
+  }
+  
+  .hotel-booking-row.rejected {
+    background-color: red;
+  }
+  

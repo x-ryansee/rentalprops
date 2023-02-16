@@ -45,18 +45,20 @@ class ReservationsController < ApplicationController
 
     private
 
-def reservation_params
-  params.permit(
-    :first_name,
-    :last_name,
-    :email,
-    :adult_guests,
-    :child_guests,
-    :rental_id,
-    :start_date,
-    :end_date
-  )
-end
+    def reservation_params
+      params.permit(
+        :first_name,
+        :last_name,
+        :email,
+        :adult_guests,
+        :child_guests,
+        :rental_id,
+        :start_date,
+        :end_date,
+        :status,
+      )
+    end
+    
     
       
       
