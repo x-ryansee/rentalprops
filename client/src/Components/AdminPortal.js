@@ -91,7 +91,10 @@ const AdminPortal = () => {
               <td className="hotel-booking-cell">{reservation.end_date}</td>
               <td className="hotel-booking-cell">{reservation.adult_guests}</td>
               <td className="hotel-booking-cell">{reservation.child_guests}</td>
-              <td className="hotel-booking-cell">{reservation.rental_id}</td>
+              <td className={`hotel-booking-cell ${Math.random() < 0.5 ? 'Napa' : 'Alpine'}`}>
+                {reservation.rental.name}
+              </td>
+
               <td className="hotel-booking-cell">
                 <select
                   value={reservation.status}

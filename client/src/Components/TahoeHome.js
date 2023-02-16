@@ -11,7 +11,7 @@ const TahoeHome = () => {
     <div style={{margin: "-80px"}}>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
           <VideoBackground style={{ height: '100vh', width: '100vw' }} />
-          <h1 style={{ color: "white", textAlign: 'center', position: 'absolute', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 1, fontSize: '4rem' }}>
+          <h1 style={{ color: "white", textAlign: 'center', position: 'absolute', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 1, fontSize: '6rem', textShadow: '0px 2px 2px #000' }}>
             Alpine Idyll
           </h1>
         </div>

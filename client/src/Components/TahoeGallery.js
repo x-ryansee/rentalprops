@@ -68,7 +68,7 @@ setTahoePics(foundGallery);
 
   return (
     <div style={{marginLeft: "4cm", marginRight: "3cm"}}>
-      <h2>TahoeGallery</h2>
+      <h2>Tahoe Gallery</h2>
       <Grid container spacing={3}>
         {tahoePics.map((pic) => (
           <Grid item xs={12} sm={6} md={4} key={pic.id}>

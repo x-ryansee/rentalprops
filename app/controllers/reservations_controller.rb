@@ -9,7 +9,7 @@ class ReservationsController < ApplicationController
     end
     
     def create
-        @rental = Rental.find_by(params[:rental_id])
+        @rental = Rental.find(params[:rental_id])
         @reservation = Reservation.new(reservation_params)
         @reservation.rental = @rental
     

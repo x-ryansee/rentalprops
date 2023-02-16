@@ -10,7 +10,6 @@ const Reservation = () => {
   const [last_name, setLast_Name] = useState("");
   const [email, setEmail] = useState("");
   const [start_date, setStart_Date] = useState("");
-  // const [end_date, setEnd_Date] = useState("");
   const [adult_guests, setAdult_Guests] = useState(1);
   const [child_guests, setChild_Guests] = useState(0);
   const [rental_id, setRental_Id] = useState("");
@@ -71,11 +70,12 @@ const Reservation = () => {
       end_date: dates.endDate.end,
       adult_guests,
       child_guests,
-      rental_id,
+      rental_id, // set rental_id to the selected value
     };
     try {
       const response = await axios.post("/reservations", reservation);
       console.log(response);
+      window.alert("Your reservation inquiry has been submitted! Your conirmation email has been sent."); // add success message
     } catch (error) {
       console.error(error);
       if (error.response.status === 422) {
@@ -85,13 +85,14 @@ const Reservation = () => {
       }
     }
   };
+  
 
   return (
     <div>
         <div>
         <div style={{ position: 'relative' }}>
           <img src="https://www.forestsuites.com/i/SITE_170315_17005325_XP7M1/content/CMS_190423_14211154_BLG15/8B33DF5E-061E-9638-323576857F129289.JPG" alt="My Pic" width= "1200px"/>
-          <h1 style={{ color: "white", textAlign: 'center', position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', zIndex: 1, fontSize: '3rem' }}>
+          <h1 style={{ color: "white", textAlign: 'center', position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', zIndex: 1, fontSize: '4rem' }}>
               Reservation Inquiry
             </h1>
         </div>
@@ -106,9 +107,11 @@ const Reservation = () => {
           value={rental_id}
           onChange={(event) => setRental_Id(event.target.value)}
         >
-          <option value="alpine">Alpine</option>
-          <option value="napa">Napa</option>
+          <option value="">Select a location</option>
+          <option value="9">Alpine</option>
+          <option value="10">Napa</option>
         </select>
+
       </div>
       <div className="form-field">
         <label htmlFor="first-name">First Name:</label>

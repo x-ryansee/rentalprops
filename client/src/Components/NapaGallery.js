@@ -69,13 +69,13 @@ const NapaGallery = () => {
 
   return (
     <div>
-      <h2>NapaGallery</h2>
+      <h2>Napa Gallery</h2>
       <Grid container spacing={3}>
         {napaPics.map((pic) => (
           <Grid item xs={12} sm={6} md={4} key={pic.id}>
             <Card className={classes.root}>
               <CardActionArea onClick={() => handleOpen(pic.image)}>
-                <CardMedia className={classes.media} image={pic.image} title={pic.id} />
+                <CardMedia className={classes.media} image={pic.image} title={pic.id} justifyContent="center" alignItems="center"/>
                 <CardContent>{pic.rental.name}</CardContent>
               </CardActionArea>
             </Card>
@@ -88,7 +88,7 @@ const NapaGallery = () => {
         className={classes.modal}
       >
         <div className={classes.paper}>
-          <img src={selectedImage} alt="selectedImage" />
+          <img src={selectedImage} alt="selectedImage"/>
           <div className={classes.bottomGallery}>
             {napaPics.map((pic) => (
               <Card className={classes.bottomCard} key={pic.id}>
