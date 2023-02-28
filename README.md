@@ -1,25 +1,11 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Click the link below for a full walkthrough demo
+https://www.loom.com/share/739a2c76b2a34b598a85bc7fee884584
 
-Things you may want to cover:
 
-* Ruby version
+Rental Property Website created for a California based company with two properties- one in Tahoe, and one in Napa.
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# rentalprops
+-CRUD functionality built with React, React Router implemented for page navigation.
+-Used Rails and BCrypt to manage user authentication, and sessions data to track users once logged in.
+-Structured the layout of the pages and other components using TailwindCSS and MaterialUI.
