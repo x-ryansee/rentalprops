@@ -76,7 +76,7 @@ const NapaGallery = () => {
             <Card className={classes.root}>
               <CardActionArea onClick={() => handleOpen(pic.image)}>
                 <CardMedia className={classes.media} image={pic.image} title={pic.id} justifyContent="center" alignItems="center"/>
-                <CardContent>{pic.rental.name}</CardContent>
+                {/* <CardContent>{pic.rental.name}</CardContent> */}
               </CardActionArea>
             </Card>
           </Grid>

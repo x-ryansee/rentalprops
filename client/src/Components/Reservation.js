@@ -75,7 +75,7 @@ const Reservation = () => {
     try {
       const response = await axios.post("/reservations", reservation);
       console.log(response);
-      window.alert("Your reservation inquiry has been submitted! Your conirmation email has been sent."); // add success message
+      window.alert("Your reservation inquiry has been submitted! Your confirmation email has been sent."); // add success message
     } catch (error) {
       console.error(error);
       if (error.response.status === 422) {
